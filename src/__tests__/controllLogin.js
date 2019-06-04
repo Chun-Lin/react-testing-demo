@@ -1,9 +1,11 @@
 import React from 'react'
-import { render, fireEvent } from '@testing-library/react'
-import UncontrollLogin from 'UncontrollLogin'
+import { render, fireEvent, cleanup } from '@testing-library/react'
+import ControllLogin from 'ControllLogin'
+
+afterEach(cleanup)
 
 test('input 12345 on <Login>', () => {
-  const { getByLabelText } = render(<UncontrollLogin />)
+  const { getByLabelText } = render(<ControllLogin />)
 
   const controlledInputNode = getByLabelText(/username/i)
 

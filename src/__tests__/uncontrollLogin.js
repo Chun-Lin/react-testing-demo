@@ -1,6 +1,8 @@
 import React from 'react'
-import { render } from '@testing-library/react'
+import { render, cleanup } from '@testing-library/react'
 import UncontrollLogin from 'UncontrollLogin'
+
+afterEach(cleanup)
 
 test('input 12345 on <Login>', () => {
   const { getByLabelText} = render(<UncontrollLogin />)
