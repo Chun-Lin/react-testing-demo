@@ -14,7 +14,7 @@ export default class UncontrollLogin extends React.Component {
     return (
       <div>
         <label htmlFor="username-input">
-          Username
+          username
         </label>
         <input
           id="username-input"
