@@ -1,0 +1,42 @@
+.todo__wrapper{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.todo__button{
+  display: block;
+  margin: 50px;
+  border-radius: 5px;
+  transition-property: border, color;
+  transition-duration: 1s, 1s;
+}
+
+
+.todo__button--style{
+  padding: 5px 10px;
+  border: 5px solid #666666;
+  font-size: 80px;
+  color: #666666;
+}
+
+.todo__button:hover{
+  border: 5px solid olive;
+  color: olive;
+}
+
+.todo__task{
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #ccc;
+}
+
+.todo__task--style{
+  font-size: 48px;
+  color: dimgray;
+}
