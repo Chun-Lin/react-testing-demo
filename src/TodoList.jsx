@@ -30,6 +30,7 @@ export default class TodoList extends React.Component {
       <div>
         <div className="todo__wrapper">
           <button
+            data-testid="task-button"
             className="todo__button todo__button--style"
             onClick={this.clickHandler}
           >
@@ -37,7 +38,10 @@ export default class TodoList extends React.Component {
           </button>
 
           {title ? (
-            <div className="todo__task todo__task--style">
+            <div
+              className="todo__task todo__task--style"
+              data-testid="task-name"
+            >
               {completed ? 'V' : 'X'} {title}
             </div>
           ) : null}
