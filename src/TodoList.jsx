@@ -7,17 +7,8 @@ export default class TodoList extends React.Component {
     todoItem: {},
   }
 
-  // componentDidMount = async () => {
-  //   const todo = await axios.get('https://jsonplaceholder.typicode.com/todos/1')
-  //   console.log(todo)
-  //   this.setState((prevState, props) => ({
-  //     todoItem: todo.data,
-  //   }))
-  // }
-
   clickHandler = async () => {
     const todo = await axios.get('https://jsonplaceholder.typicode.com/todos/1')
-    console.log(todo)
     this.setState((prevState, props) => ({
       todoItem: todo.data,
     }))

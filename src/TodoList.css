@@ -15,6 +15,7 @@
   border-radius: 5px;
   transition-property: border, color;
   transition-duration: 1s, 1s;
+  outline: none;
 }
 
 

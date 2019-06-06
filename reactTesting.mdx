@@ -1,7 +1,7 @@
 import { default as theme } from '@mdx-deck/themes/code'
 import WhiteLayout from './mdx-slides/WhiteLayout.js'
-import { Image } from 'mdx-deck'
-
+import { Image, Appear } from 'mdx-deck'
+import { Split } from 'mdx-deck/layouts'
 
 # React Testing
 
@@ -9,7 +9,7 @@ import { Image } from 'mdx-deck'
 
 ---
 
-import { Appear } from 'mdx-deck'
+# 5 Testing ways
 
 <ul>
   <Appear>
@@ -37,16 +37,179 @@ import { Appear } from 'mdx-deck'
 
 import UncontrollLogin from './src/UncontrollLogin'
 
+# Uncontrolled Input
+
 <UncontrollLogin />
 
 ---
 
-<Image src="./mdx-slides/assets/UncontrollInput.png" size="contain" />
+
+
+<Image src="./mdx-slides/assets/UncontrollInput.png" size="small">
+  Uncontrolled Input JSX
+</Image>
+
 
 ---
 
-<Image src="./mdx-slides/assets/UncontrollInput-test.png" size="contain" />
+# Steps - 3A
+
+<ul>
+  <Appear>
+    <li>Arrange</li>
+    <li>Act</li>
+    <li>Assert</li>
+  </Appear>
+</ul>
 
 ---
+
+<Image src="./mdx-slides/assets/UncontrollInput-test.png" size="contain">
+  Uncontrolled Input Unit Testing
+</Image>
+
+---
+
+import ControllLogin from './src/ControllLogin.jsx'
+
+# Controlled Input
+
+<ControllLogin />
+
+---
+
+<Image src="./mdx-slides/assets/controllInput.png" size="contain">
+  Controlled Input JSX
+</Image>
+
+---
+
+<Image src="./mdx-slides/assets/controllInput-test.png" size="contain">
+  Controlled Input Unit Testing
+</Image>
+
+---
+
+import NumberDisplay from './src/NumberDisplay.js'
+
+# NumberDisplay
+
+<NumberDisplay number={1}/>
+
+---
+
+<Image src="./mdx-slides/assets/numberDisplay.png" size="contain">
+  NumberDisplay JSX
+</Image>
+
+---
+
+<Image src="./mdx-slides/assets/numberDisplay-test.png" size="contain">
+  NumberDisplay Unit Testing
+</Image>
+
+---
+
+# Snapshot Testing
+
+#### To make sure your UI or JSX structure doesn't change unexpectedly
+
+---
+
+<Image src="./mdx-slides/assets/numberDisplay-snapshot-test.png" size="contain">
+  NumberDisplay Snapshot Testing
+</Image>
+
+---
+
+<Image src="./mdx-slides/assets/numberDisplay-snapshot.png" size="contain">
+  NumberDisplay Snapshot
+</Image>
+
+---
+
+# Visual Regression Testing
+
+#### Matcher that performs image comparisons
+
+---
+
+# Demo
+
+---
+
+# Integration Testing
+
+#### Modules are combined and tested as a group
+
+---
+
+import TodoList from './src/TodoList.jsx'
+
+<TodoList />
+
+---
+
+<Image src="./mdx-slides/assets/todolist.png" size="contain" />
+  
+
+---
+
+<Image src="./mdx-slides/assets/todolist-integration-test.png" size="contain">
+  TodoList integration Testing
+</Image>
+
+---
+
+# E2E Testing
+
+---
+
+<Image src="./mdx-slides/assets/cypress-logo.png" size="contain" />
+
+---
+
+<Image src="./mdx-slides/assets/todolist-e2e-testing.png" size="contain">
+  TodoList E2E Testing
+</Image>
+
+---
+
+> The more your tests resemble the way your software is used, the more confidence they can give you.
+
+***Kent C. Dodds***
+
+---
+
+# Thanks!
+
+---
+
+
+# Reference
+
+<ul>
+  <Appear>
+    <li><a href="https://jestjs.io/">Jest</a></li>
+    <li><a href="https://testing-library.com/">Testing Library</a></li>
+    <li><a href="https://github.com/americanexpress/jest-image-snapshot">jest-image-snapshot</a></li>
+    <li><a href="https://www.cypress.io/">cypress</a></li>
+    <li><a href="https://pptr.dev/">puppeteer</a></li>
+    <li><a href="https://mdx-deck.jxnblk.com">MDX DECK</a></li>
+  </Appear>
+</ul>
+
+---
+
+
+
+
+
+
+
+
+
+
+
 
 

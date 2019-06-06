@@ -1,7 +1,4 @@
-import React from 'react'
-import { render, cleanup } from '@testing-library/react'
 import {toMatchImageSnapshot} from 'jest-image-snapshot'
-import NumberDisplay from 'NumberDisplay'
 import puppeteer from 'puppeteer'
 
 expect.extend({ toMatchImageSnapshot });

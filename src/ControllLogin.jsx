@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './UncontrollLogin.css'
 export default class ControllInput extends React.Component {
   state = {
     value: '',
