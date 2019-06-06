@@ -19,7 +19,8 @@
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "test:e2e:dev": "start-test 3000 cy:open",
-    "test:e2e:cli": "start-test 3000 cy:run"
+    "test:e2e:cli": "start-test 3000 cy:run",
+    "mdx:start": "mdx-deck reactTesting.mdx"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -38,6 +39,7 @@
   },
   "devDependencies": {
     "@testing-library/cypress": "^4.0.2",
-    "cypress": "^3.3.1"
+    "cypress": "^3.3.1",
+    "mdx-deck": "^2.3.2"
   }
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './UncontrollLogin.css'
 export default class UncontrollLogin extends React.Component {
   constructor(props) {
     super(props)
@@ -14,13 +14,12 @@ export default class UncontrollLogin extends React.Component {
     return (
       <div>
         <label htmlFor="username-input">
-          username
+          Username
         </label>
         <input
           id="username-input"
           placeholder="Username..."
           name="username"
-          style={{ flex: 1 }}
         />
       </div>
     )

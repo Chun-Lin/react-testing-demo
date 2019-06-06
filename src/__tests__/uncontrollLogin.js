@@ -5,7 +5,7 @@ import UncontrollLogin from 'UncontrollLogin'
 afterEach(cleanup)
 
 test('input 12345 on <Login>', () => {
-  const { getByLabelText} = render(<UncontrollLogin />)
+  const { getByLabelText } = render(<UncontrollLogin />)
 
   const usernameNode = getByLabelText(/username/i)
 
