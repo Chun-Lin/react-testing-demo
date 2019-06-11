@@ -10,7 +10,8 @@
     "puppeteer": "^1.17.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.0.1",
+    "start-server-and-test": "^1.9.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -19,12 +20,13 @@
     "eject": "react-scripts eject",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
+    "test:image:snapshot": "start-test 3000 test",
     "test:e2e:dev": "start-test 3000 cy:open",
     "test:e2e:cli": "start-test 3000 cy:run",
     "mdx:start": "mdx-deck reactTesting.mdx",
     "mdx:build": "mdx-deck build reactTesting.mdx",
     "mdx:predeploy": "npm run mdx:build",
-    "mdx:deploy": "gh-pages -d mdx:build"    
+    "mdx:deploy": "gh-pages -d mdx:build"
   },
   "eslintConfig": {
     "extends": "react-app"
