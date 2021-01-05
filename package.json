@@ -5,7 +5,7 @@
   "homepage": "https://myusername.github.io/react-testing-demo",
   "dependencies": {
     "@testing-library/react": "^8.0.1",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "jest-image-snapshot": "^2.8.2",
     "puppeteer": "^1.17.0",
     "react": "^16.8.6",
